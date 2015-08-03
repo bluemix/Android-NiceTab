@@ -666,6 +666,9 @@ public class NiceTabStrip extends ViewGroup {
         }
     }
 
+
+    // comment this overrided function if you want your app to support right-to-left direction
+    /*
     @Override
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
         final int count = getChildCount();
@@ -684,7 +687,7 @@ public class NiceTabStrip extends ViewGroup {
             child.layout(childLeft, parentTop, childLeft + width, Math.min(parentTop + height, parentBottom));
             childLeft += (width + dividerPaddingWidth);
         }
-    }
+    }*/
 
     @Override
     protected void onDraw(Canvas canvas) {
